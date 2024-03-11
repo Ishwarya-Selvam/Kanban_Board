@@ -1,0 +1,185 @@
+:root{
+    --pink: lightpink;
+    --blue: lightblue;
+    --violet: purple;
+    --green: lightgreen;
+    --light: white;
+    --red: red;
+}
+
+.toolbox{
+    background-color: black;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.toolbox-priority{
+    display: flex;
+    /* border: 3px solid red; */
+    width: 15rem;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60%;
+    background-color: #393c3f;
+    margin-left: 4rem;
+}
+
+.action-btn{
+    /* border: 3px solid red; */
+    width: 8rem;
+    height: 60%;
+    background-color: var(--light);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem
+}
+
+.add-btn, .delete-btn{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.main{
+
+}
+
+.heading-container{
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+}
+
+.heading_pending{
+    width: 70%;
+}
+
+.heading_finished{
+    width: 30%;
+}
+
+.container-wrapper{
+    display: flex;
+    height: 300px;
+}
+
+.pending_container{
+    width: 70%;
+    border-right: 2px solid grey;
+}
+
+.finished_container{
+    width: 30%;
+}
+
+.ticket_container{
+    height: 12rem;
+    width: 17rem;
+    position: relative;
+    background-color: #ecf0f1;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.ticket_color{
+    height: 10%;
+}
+
+.ticket_id{
+    height: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+.ticket_area{
+   padding: 5px;
+   font-size: 1.5rem;
+}
+
+.lock_unlock{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.model-container{
+    position: fixed;
+    top:25vh;
+    left: 25vw;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    box-shadow: 10px 10px 50px -10px black; 
+    display: none;
+}
+
+.textarea{
+    height: 100%;
+    width: 75%;
+    font-size: 1.5rem;
+    resize: none;
+    border: none;
+    /* background-color: whitesmoke */
+    padding: 2rem;
+}
+
+.priority_color_container{
+    height: 100%;
+    width: 25%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.priority_color{
+    height: 2rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.active{
+    border: 3px solid white;
+}
+
+.display{
+    display: flex;
+}
+
+.color{
+    height: 1.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.pink{
+    background-color: var(--pink)
+}
+
+.blue{
+    background-color: var(--blue);
+}
+
+.violet{
+    background-color: var(--violet);
+}
+
+.green{
+    background-color: var(--green);
+}
+
+.red{
+    color: var(--red);
+}

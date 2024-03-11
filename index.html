@@ -1,0 +1,180 @@
+<!-- Create a new Knaban Board
+
+Create and Update task
+Lock ande Unlock
+Different colors for cards
+Pop-up dialouge Box
+Implement delete
+Filter based on color
+Storage options(LOcal storage, Cookies, Session) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="toolbox">
+        <div class="toolbox-priority">
+            <div class="color pink"></div>
+            <div class="color blue"></div>
+            <div class="color violet"></div>
+            <div class="color green"></div>
+        </div>
+        <div class="action-btn">
+            <div class="add-btn">
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="delete-btn">
+                <i class="fa fa-trash"></i>
+            </div>    
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="heading-container">
+            <h2 class="heading_pending">Pending</h2>
+            <h2 class="heading_finished">Finished</h2>
+        </div>
+    
+        <div class="container-wrapper">
+            <div class="pending_container container">
+                <!-- <div class="ticket_container">
+                    <div class="ticket_color pink">
+                        
+                    </div>
+                    <div class="ticket_id">
+                        id
+                    </div>
+                    <div class="ticket_area">
+                        Planning outing
+                    </div>
+                    <div class="lock_unlock">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div>
+                <div class="ticket_container">
+                    <div class="ticket_color green">
+                        
+                    </div>
+                    <div class="ticket_id">
+                        id
+                    </div>
+                    <div class="ticket_area">
+                        Planning outing
+                    </div>
+                    <div class="lock_unlock">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div>
+                <div class="ticket_container">
+                    <div class="ticket_color violet">
+                        
+                    </div>
+                    <div class="ticket_id">
+                        id
+                    </div>
+                    <div class="ticket_area">
+                        Planning outing
+                    </div>
+                    <div class="lock_unlock">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div>
+                <div class="ticket_container">
+                    <div class="ticket_color blue">
+                        
+                    </div>
+                    <div class="ticket_id">
+                        id
+                    </div>
+                    <div class="ticket_area">
+                        Planning outing
+                    </div>
+                    <div class="lock_unlock">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div> -->
+            </div>
+            <div class="finished_container container">
+                <!-- <div class="ticket_container">
+                    <div class="ticket_color pink">
+                        
+                    </div>
+                    <div class="ticket_id">
+                        id
+                    </div>
+                    <div class="ticket_area">
+                        Planning outing
+                    </div>
+                    <div class="lock_unlock">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div>
+                <div class="ticket_container">
+                    <div class="ticket_color green">
+                        
+                    </div>
+                    <div class="ticket_id">
+                        id
+                    </div>
+                    <div class="ticket_area">
+                        Planning outing
+                    </div>
+                    <div class="lock_unlock">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div>
+                <div class="ticket_container">
+                    <div class="ticket_color violet">
+                        
+                    </div>
+                    <div class="ticket_id">
+                        id
+                    </div>
+                    <div class="ticket_area">
+                        Planning outing
+                    </div>
+                    <div class="lock_unlock">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div>
+                <div class="ticket_container">
+                    <div class="ticket_color blue">
+                        
+                    </div>
+                    <div class="ticket_id">
+                        id
+                    </div>
+                    <div class="ticket_area">
+                        Planning outing
+                    </div>
+                    <div class="lock_unlock">
+                        <i class="fa fa-lock"></i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="model-container">
+        <textarea placeholder="Enter Task" class="textarea"></textarea>
+        <div class="priority_color_container">
+            <div class="priority_color pink"></div>
+            <div class="priority_color violet"></div>
+            <div class="priority_color green"></div>
+            <div class="priority_color blue"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@5.0.3/dist/short-unique-id.min.js"></script>
+    <script src="dragdrop.js"></script>
+</body>
+</html>
